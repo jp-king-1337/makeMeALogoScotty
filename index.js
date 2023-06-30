@@ -72,5 +72,8 @@ function generateLogo(answers) {
             break;
     }
 
-    
+    // Now for a string that represents the user's desired logo based on choices
+    const svgString = `
+        
+    `;
 }
