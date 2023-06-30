@@ -38,3 +38,25 @@ inquirer
         // Generate the logo based on user input, something like:
         // const logo = generateLogo(answers);
     ]);
+
+
+function generateLogo(answers) {
+    const { logoText, textColor, logoShape, shapeColor } = answers;
+
+    // Okay so I kinda get how svg shapes work.
+    // circle has attributes cx, cy, r, fill
+        // cx is x-coordinate of circle center
+        // cy is y-coordinate of circle center
+        // r is radius
+        // fill is fill color
+    // polygon has attributes of points, fill
+        // takes a list of x,y coordinate pairs separated by spaces
+        // ew, weird to work with
+    // rectangle has attributes x, y, width, height, fill
+        // x is x-coordinate of top-left corner
+        // y is y of top-left
+        // width and height are semantic, like fill
+    // All the same, I had ChatGPT design the shapes to ensure they fit within the required 300x200px image. I understand the circle and square well enough to try it myself, but the triangle is witchcraft as far as I can tell. ¯\_(ツ)_/¯
+
+    
+}
