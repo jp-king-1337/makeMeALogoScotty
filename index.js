@@ -49,7 +49,15 @@ function generateLogo(answers) {
     let shape;
     switch (logoShape) {
         case "circle":
-        shape = svg.circle(100)
-        break;
+            shape = svg.circle(100).move(150, 100).fill(shapeColor);
+            break;
+        case "triangle":
+            shape = svg.polygon([150, 50, 100, 150, 200, 150]).fill(shapeColor);
+            break;
+        case "square":
+            shape = svg.rect(100, 100).move(100, 50).fill(shapeColor);
+            break;
+        default:
+            break;
     }
 }
