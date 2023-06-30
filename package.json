@@ -1,5 +1,4 @@
 {
-  // Learned that npm documentation specifies that the package name should be lowercase
   "name": "makemealogoscotty",
   "version": "1.0.0",
   "description": "",
