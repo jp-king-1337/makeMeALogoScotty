@@ -19,7 +19,7 @@ inquirer
             name: "logoShape",
             type: "list",
             message: "Choose a shape:",
-            choices: ["circle", "triangle", "square"],
+            choices: ["circle", "square", "triangle", "equilateral triangle"],
         },
         {
             name: "shapeColor",
