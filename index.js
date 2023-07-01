@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const { SVG } = require("@svgdotjs/svg.js");
+const { generateLogo, saveLogoFile } = require("./lib/shapes");
 
 
 inquirer
