@@ -41,6 +41,7 @@ inquirer
     ]);
 
 
+
 function generateLogo(answers) {
     const { logoText, textColor, logoShape, shapeColor } = answers;
 
@@ -48,16 +49,33 @@ function generateLogo(answers) {
 
     let shape;
     switch (logoShape) {
+        // Found a way to construct shapes! Made sure these all work.
         case "circle":
+            // https://jsfiddle.net/y9gtm6es/15/
             shape = svg.circle(100).move(150, 100).fill(shapeColor);
             break;
         case "triangle":
+            // https://jsfiddle.net/qz6rhubv/
             shape = svg.polygon([150, 50, 100, 150, 200, 150]).fill(shapeColor);
+            // This is still witchcraft. I can play with the circle and the square, but I have to trust ChatGPT about the triangle because I can't wrap my head around it. Want to try some more, but that will have to wait. I want to move on for now and actually get the app working.
             break;
         case "square":
+            // https://jsfiddle.net/y9gtm6es/18/
             shape = svg.rect(100, 100).move(100, 50).fill(shapeColor);
             break;
         default:
             break;
     }
+
+    svg.text(logoText)
+        .x(150)
+        .y(125)
+        .font({ size: 60 })
+        .fill(textColor)
+        .center("middle")
+        .middle("middle");
+
+    const svgString = svg.svg();
+
+    return svgString;
 }
