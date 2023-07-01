@@ -3,7 +3,6 @@ const inquirer = require("inquirer");
 const { SVG } = require("@svgdotjs/svg.js");
 
 
-
 inquirer
     .prompt([
         {
