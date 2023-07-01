@@ -31,7 +31,7 @@ inquirer
 
         saveLogoFile("logo.svg", logo)
             .then(() => {
-                console.log("Logo saved as logo.svg.");
+                console.log("Generated logo.svg.");
             })
             .catch((err) => {
                 console.error("An error occurred while saving the logo:", err);
