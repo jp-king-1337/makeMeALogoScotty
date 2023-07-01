@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const { SVG } = require("@svgdotjs/svg.js");
+const { createSVG } = require("@svgdotjs/svg.js");
 
 
 
@@ -31,7 +31,7 @@ inquirer
     .then((answers) => {
         const logo = generateLogo(answers);
 
-        fs.writeFile("logo.svg", logo);
+        saveLogoFile("logo.svg", logo);
     });
 
 
@@ -73,4 +73,9 @@ function generateLogo(answers) {
     return svgString;
 }
 
-function saveLogoFile()
+function saveLogoFile(filename, logo) {
+    fs.writeFile(filename, logo, (err) => {
+        if (err) throw err;
+        console.log(`Logo saved as ${filename}.`)
+    });
+}
