@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200"><polygon points="150,18 244,182 56, 182" fill="green" />
-      <text x="150" y="100" font-size="60" fill="purple" text-anchor="middle" dominant-baseline="middle">
-        qWe
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200"><polygon points="150,18 244,182 56, 182" fill="black" />
+          <text x="150" y="121" font-size="60" fill="undefined" text-anchor="middle" dominant-baseline="central">
+            undefined
+          </text>
+      <text x="150" y="100" font-size="60" fill="white" text-anchor="middle" dominant-baseline="middle">
+        qwe
       </text></svg>
