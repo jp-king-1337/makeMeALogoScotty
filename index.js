@@ -30,5 +30,11 @@ inquirer
     .then((answers) => {
         const logo = generateLogo(answers);
 
-        saveLogoFile("logo.svg", logo);
+        saveLogoFile("logo.svg", logo)
+            .then(() => {
+                console.log("Logo saved as logo.svg.");
+            })
+            .catch((err) => {
+                console.error("An error occurred while saving the logo:", err);
+            });
     });
