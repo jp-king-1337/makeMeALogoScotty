@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const { createSVG } = require("@svgdotjs/svg.js");
+const { SVG } = require("@svgdotjs/svg.js");
 
 
 
@@ -39,7 +39,7 @@ inquirer
 function generateLogo(answers) {
     const { logoText, textColor, logoShape, shapeColor } = answers;
 
-    const svg = createSVG().size(300, 200);
+    const svg = SVG().size(300, 200);
 
     let shape;
     switch (logoShape) {
