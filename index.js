@@ -1,3 +1,4 @@
+const fs = require("fs");
 const inquirer = require("inquirer");
 const { createSVG } = require("svg.js");
 
@@ -35,10 +36,12 @@ inquirer
             message: "Enter your shape color (keyword or hexadecimal):",
         },
     ])
-    .then((answers) => [
-        // Generate the logo based on user input, something like:
-        // const logo = generateLogo(answers);
-    ]);
+    .then((answers) => {
+        // I've noticed in class that JD seems to have his variables in alphabetical order, so I want to try to do that too. And also ask about it next class.
+        const logo = generateLogo(answers);
+
+        fs.writeFile("logo.svg", logo);
+    });
 
 
 
