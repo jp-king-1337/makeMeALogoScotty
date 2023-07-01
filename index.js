@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const { createSVG } = require("svg.js");
+const { SVG } = require("@svgdotjs/svg.js");
 
 
 
@@ -72,3 +72,5 @@ function generateLogo(answers) {
 
     return svgString;
 }
+
+function saveLogoFile()
