@@ -8,7 +8,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "test": "npx jest ./lib/shapes.test.js"
   },
   "keywords": [],
   "author": "",
