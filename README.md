@@ -24,6 +24,8 @@ git clone git@github.com:jp-king-1337/makeMeALogoScotty.git
 
 This project is to be graded as part of my participation in the Rutgers Coding Bootcamp.
 
+[Walkthrough Video](https://drive.google.com/file/d/1sTPJDtipi4FTUOT6zJrtiIhHablz4lnz/view?usp=sharing)
+
 
 ## Credits
 
