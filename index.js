@@ -29,7 +29,7 @@ inquirer
     .then((answers) => {
         const logo = generateLogo(answers);
 
-        saveLogoFile("logo.svg", logo)
+        saveLogoFile("examples/logo.svg", logo)
             .then(() => {
                 console.log("Generated logo.svg.");
             })
